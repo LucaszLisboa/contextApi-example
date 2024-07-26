@@ -2,12 +2,12 @@ import React, { useContext, useEffect } from "react"
 import { ThemeContext } from "../contexts/ThemeContext"
 import { UserContext } from "../contexts/UserContext";
 import { InputText } from "primereact/inputtext";
+import { UserLocationContext } from "../contexts/UserLocationContext";
 
 export function Home(){
     const {user, setUser} = useContext(UserContext);
     const {theme} = useContext(ThemeContext);
-
-    console.log(user);
+    const {userLocation} = useContext(UserLocationContext);
 
     return (
         <section className={`flex h-screen ${theme} justify-center items-center flex-col space-y-6`}>
@@ -24,6 +24,10 @@ export function Home(){
             <div>
                 <p>Nome: <b>{user.nome}</b></p>
                 <p>Email: <b>{user.email}</b></p>
+            </div>
+            <div>
+                <p>Latitude: <b>{userLocation.latitude}</b></p>
+                <p>Longitude: <b>{userLocation.longitude}</b></p>
             </div>
         </section>
     )

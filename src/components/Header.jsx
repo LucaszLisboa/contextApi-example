@@ -20,6 +20,7 @@ export function Header(){
             <article className="flex space-x-6 items-center">
                 <NavLink to='/home'>Home</NavLink>
                 <NavLink to='/about'>About</NavLink>
+                <NavLink to='/carrosel'>Carrosel</NavLink>
             </article>
             <article className="flex items-center space-x-6">
                 <div className="card flex justify-content-center items-center space-x-2">

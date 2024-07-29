@@ -1,0 +1,17 @@
+.p-carousel-indicators {
+    width: 100%;
+    position: absolute;
+    top: 72%;
+}
+
+.p-carousel-indicator {
+    background-color: rgb(177, 177, 177);
+    width: 20px;
+    border-radius: 20%;
+    cursor: pointer;
+
+}
+
+.p-carousel-indicator.p-highlight {
+    background-color: #ffffff;
+} 
